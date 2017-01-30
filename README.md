@@ -1,3 +1,5 @@
+Debian / Ubuntu only
+
 ```
 sudo npm install nginx-manager -g
 ```

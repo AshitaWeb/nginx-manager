@@ -1,11 +1,9 @@
 {
   "name": "nginx-manager",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Nginx manager command line tool",
   "main": "index.js",
   "dependencies": {
-    "co": "^4.6.0",
-    "co-prompt": "^1.0.0",
     "commander": "^2.9.0"
   },
   "devDependencies": {},
@@ -24,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/rubensfernandes/nginx-manager/issues"
   },
-  "homepage": "https://github.com/rubensfernandes/nginx-manager#readme"
+  "homepage": "https://github.com/rubensfernandes/nginx-manager#readme",
+  "bin": {
+    "nginx-manager": "./index.js"
+  }
 }

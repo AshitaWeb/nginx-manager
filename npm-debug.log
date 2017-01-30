@@ -1,0 +1,110 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'publish' ]
+2 info using npm@3.10.10
+3 info using node@v6.9.4
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/rubens/projetos/nginx-manager',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/rubens/.npm/nginx-manager/0.0.5/package.tgz not in flight; packing
+9 verbose correctMkdir /home/rubens/.npm correctMkdir not in flight; initializing
+10 info lifecycle nginx-manager@0.0.5~prepublish: nginx-manager@0.0.5
+11 silly lifecycle nginx-manager@0.0.5~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/rubens/.npm/nginx-manager/0.0.5/package.tgz',
+12 verbose tar pack   '/home/rubens/projetos/nginx-manager' ]
+13 verbose tarball /home/rubens/.npm/nginx-manager/0.0.5/package.tgz
+14 verbose folder /home/rubens/projetos/nginx-manager
+15 verbose addLocalTarball adding from inside cache /home/rubens/.npm/nginx-manager/0.0.5/package.tgz
+16 verbose correctMkdir /home/rubens/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd nginx-manager@0.0.5
+18 verbose afterAdd /home/rubens/.npm/nginx-manager/0.0.5/package/package.json not in flight; writing
+19 verbose correctMkdir /home/rubens/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /home/rubens/.npm/nginx-manager/0.0.5/package/package.json written
+21 silly publish { name: 'nginx-manager',
+21 silly publish   version: '0.0.5',
+21 silly publish   description: 'Nginx manager command line tool',
+21 silly publish   main: 'index.js',
+21 silly publish   dependencies: { commander: '^2.9.0' },
+21 silly publish   devDependencies: {},
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/rubensfernandes/nginx-manager.git' },
+21 silly publish   keywords: [ 'nginx' ],
+21 silly publish   author: { name: 'Rubens Fernandes' },
+21 silly publish   license: 'MIT',
+21 silly publish   bugs: { url: 'https://github.com/rubensfernandes/nginx-manager/issues' },
+21 silly publish   homepage: 'https://github.com/rubensfernandes/nginx-manager#readme',
+21 silly publish   bin: { 'nginx-manager': './index.js' },
+21 silly publish   readme: 'Debian / Ubuntu only\n\n```\nsudo npm install nginx-manager -g\n```\n\nUsage:\nsudo nginx-manager -d /var/www/projetos/meanbase/frontend/ -u meanbasenginx.dev -n meanbasenginx -p 20',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'b53aaf72f23e4c68b54ccb1dfddb10636d89fcae',
+21 silly publish   _id: 'nginx-manager@0.0.5',
+21 silly publish   _shasum: 'd0c86830aa72e5857c6dccc6f19713d820799dbe',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name nginx-manager
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'nginx-manager',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'nginx-manager',
+26 silly mapToRegistry   name: 'nginx-manager',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/nginx-manager
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /home/rubens/.npm/nginx-manager/0.0.5/package.tgz
+30 verbose request uri https://registry.npmjs.org/nginx-manager
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 17:57:52
+33 verbose request using bearer token for auth
+34 verbose request id 8cf489b17661ec7a
+35 http request PUT https://registry.npmjs.org/nginx-manager
+36 http 403 https://registry.npmjs.org/nginx-manager
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Mon, 30 Jan 2017 19:57:58 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-gru7126-GRU',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1485806278.057052,VS0,VE274',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /home/rubens/.npm/registry.npmjs.org/nginx-manager on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 0.0.5." : nginx-manager
+40 verbose stack     at makeError (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+40 verbose stack     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+40 verbose stack     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:969:12)
+41 verbose statusCode 403
+42 verbose pkgid nginx-manager
+43 verbose cwd /home/rubens/projetos/nginx-manager
+44 error Linux 4.4.0-57-generic
+45 error argv "/usr/bin/nodejs" "/usr/bin/npm" "publish"
+46 error node v6.9.4
+47 error npm  v3.10.10
+48 error code E403
+49 error "You cannot publish over the previously published version 0.0.5." : nginx-manager
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]

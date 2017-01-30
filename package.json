@@ -1,6 +1,6 @@
 {
   "name": "nginx-manager",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Nginx manager command line tool",
   "main": "index.js",
   "dependencies": {
